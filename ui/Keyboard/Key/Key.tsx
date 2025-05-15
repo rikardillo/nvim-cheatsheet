@@ -11,7 +11,9 @@ export default function Key({
   bottomMode,
 }: KeyProps) {
   return (
-    <div className="bg-slate-700 aspect-square max-w-[120px] rounded-lg flex flex-col overflow-hidden select-none sm:hover:outline-4 sm:hover:outline-white transition-all duration-150 cursor-pointer w-full">
+    <div
+      className="bg-slate-700 aspect-square rounded-lg flex flex-col overflow-hidden select-none sm:hover:outline-4 sm:hover:outline-white transition-all duration-150 cursor-pointer w-[calc(100%/16)]"
+    >
       <KeyText
         keybutton={top}
         text={topDescription}

@@ -8,3 +8,11 @@ export type KeyProps = {
   bottomDescription: string | undefined;
   bottomMode: NeoVimModes;
 };
+
+export type KeyboardRow = {
+  initialKey?: {
+    button: string;
+    width: number | undefined;
+  };
+  keys: KeyProps[];
+};

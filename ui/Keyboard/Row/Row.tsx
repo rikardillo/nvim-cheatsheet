@@ -8,11 +8,10 @@ type RowProps = {
     button: string;
     width: number | undefined;
   };
-  initialKeyWidth?: number;
   row: any;
 };
 
-export default function Row({ row, initialKey, initialKeyWidth }: RowProps) {
+export default function Row({ row, initialKey }: RowProps) {
   return (
     <div className="flex gap-2">
       {initialKey && (

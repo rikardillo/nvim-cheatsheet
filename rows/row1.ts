@@ -1,12 +1,6 @@
-import { KeyProps } from "../ui/Keyboard/Key/Key.types";
+import { KeyboardRow } from "../ui/Keyboard/Key/Key.types";
 
-const row1: {
-  initialKey?: {
-    button: string;
-    width: number | undefined;
-  };
-  keys: KeyProps[];
-} = {
+const row1: KeyboardRow = {
   keys: [
     {
       top: "~",

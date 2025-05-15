@@ -7,10 +7,15 @@ export default function InitialKey({
   initialKeyWidth,
   initialKey,
 }: InitialKeyProps) {
-  const width = `w-full max-width-[calc(120px*${initialKeyWidth})]`;
+  const width = `max-w-[calc((100%/16)*${initialKeyWidth})]`;
+
+  console.log(initialKeyWidth, width);
   return (
     <div
-      className={`h-full border-2 border-white grow rounded-lg min-h-[120px] flex items-center justify-center p-4 uppercase opacity-40 select-none ${width}`}
+      className={`border-2 border-white rounded-lg grow flex items-center justify-center p-4 uppercase opacity-40 select-none truncate `}
+      style={{
+        maxWidth: `calc(100%/16*${initialKeyWidth})`,
+      }}
     >
       {initialKey}
     </div>
