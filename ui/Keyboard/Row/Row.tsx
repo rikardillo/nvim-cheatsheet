@@ -4,7 +4,10 @@ import { KeyProps } from "../Key/Key.types";
 import InitialKey from "../Key/InitialKey";
 
 type RowProps = {
-  initialKey?: string;
+  initialKey?: {
+    button: string;
+    width: number | undefined;
+  };
   initialKeyWidth?: number;
   row: any;
 };
@@ -13,7 +16,10 @@ export default function Row({ row, initialKey, initialKeyWidth }: RowProps) {
   return (
     <div className="flex gap-2">
       {initialKey && (
-        <InitialKey initialKey={initialKey} initialKeyWidth={initialKeyWidth} />
+        <InitialKey
+          initialKey={initialKey.button}
+          initialKeyWidth={initialKey.width}
+        />
       )}
 
       {row.map((key: KeyProps, i: number) => (

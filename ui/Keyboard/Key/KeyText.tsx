@@ -2,7 +2,7 @@ import { NeoVimModes } from "./Key.types";
 
 type KeyTextProps = {
   keybutton: string;
-  text: string;
+  text: string | undefined;
   itemsAlign: "start" | "end";
   mode: NeoVimModes;
 };

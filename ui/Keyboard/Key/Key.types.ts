@@ -5,6 +5,6 @@ export type KeyProps = {
   topDescription: string;
   topMode: NeoVimModes;
   bottom: string;
-  bottomDescription: string;
+  bottomDescription: string | undefined;
   bottomMode: NeoVimModes;
 };

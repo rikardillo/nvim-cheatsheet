@@ -4,7 +4,7 @@ import row2 from "@/rows/row2";
 import row3 from "@/rows/row3";
 import row4 from "@/rows/row4";
 
-const rows = [row1, row2, row3, row4];
+const rows = [row1, row2];
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <h2>NeoVim Graphical Cheat Sheet</h2>
       {/* <Row initialKey="something" keys={["Q", "W", "E", "R", "T", "Y"]} /> */}
       {rows.map((row, i) => (
-        <Row initialKey="" row={row} key={i} />
+        <Row initialKey={row.initialKey} row={row.keys} key={i} />
       ))}
     </div>
   );
