@@ -8,7 +8,7 @@ const rows = [row1, row2, row3, row4];
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="flex flex-col gap-2">
       <h2>NeoVim Graphical Cheat Sheet</h2>
       {/* <Row initialKey="something" keys={["Q", "W", "E", "R", "T", "Y"]} /> */}
       {rows.map((row, i) => (
