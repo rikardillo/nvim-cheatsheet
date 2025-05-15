@@ -7,7 +7,7 @@ interface KeyboardProps {
 
 export default function Keyboard({ rows }: KeyboardProps) {
   return (
-    <div>
+    <div className="flex flex-col gap-[.6vh] w-[80%]">
       {rows.map((row, i) => (
         <Row initialKey={row.initialKey} row={row.keys} key={i} />
       ))}

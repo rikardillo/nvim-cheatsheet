@@ -13,7 +13,7 @@ type RowProps = {
 
 export default function Row({ row, initialKey }: RowProps) {
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-[.4%]">
       {initialKey && (
         <InitialKey
           initialKey={initialKey.button}

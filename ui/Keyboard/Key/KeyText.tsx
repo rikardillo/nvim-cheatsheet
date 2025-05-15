@@ -24,13 +24,17 @@ export default function KeyText({
 
   return (
     <div
-      className={`flex h-1/2 p-2 lg:gap-4 md:gap-2 
+      className={`flex h-1/2 lg:p-2 lg:gap-[6px] md:gap-[4px] md:p-1 gap-[2px]
         ${itemsAlign === "start" ? "items-start" : "items-end"}
         ${modeColor}
         `}
     >
-      <p className="key lg:text-2xl md:text-xl sm:text-lg transition-all duration-150">{keybutton}</p>
-      <p className="text-right w-full description xl:text-[12px] lg:text-[10px] md:text-[8px] text-[8px] leading-tight transition-all duration-150">{text}</p>
+      <p className="key lg:text-xl md:text-lg sm:text-lg transition-all duration-150">
+        {keybutton}
+      </p>
+      <p className="text-right w-full description xl:text-[12px] lg:text-[10px] md:text-[8px] text-[8px] leading-tight transition-all duration-150 grow">
+        {text}
+      </p>
     </div>
   );
 }

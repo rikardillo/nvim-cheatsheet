@@ -1,122 +1,92 @@
-import { KeyProps } from "../ui/Keyboard/Key/Key.types";
+import { KeyboardRow } from "../ui/Keyboard/Key/Key.types";
 
-const row3: {
-  initialKey?: {
-    button: string;
-    width: number | undefined;
-  };
-  keys: KeyProps[];
-} = {
+const row4: KeyboardRow = {
   initialKey: {
-    button: "caps lock",
-    width: 2.25,
+    button: "shift",
+    width: 2.5,
   },
   keys: [
     {
-      top: "Q",
+      top: "Z",
       topDescription: "ex mode",
       topMode: "insert",
-      bottom: "q",
+      bottom: "z",
       bottomDescription: "record macros",
       bottomMode: "insert",
     },
     {
-      top: "W",
+      top: "X",
       topDescription: "next WORD",
       topMode: "motion",
-      bottom: "w",
+      bottom: "x",
       bottomDescription: "next word",
       bottomMode: "motion",
     },
     {
-      top: "E",
+      top: "C",
       topDescription: "end WORD",
       topMode: "motion",
-      bottom: "e",
+      bottom: "c",
       bottomDescription: "end word",
       bottomMode: "motion",
     },
     {
-      top: "R",
+      top: "V",
       topDescription: "replace mode",
       topMode: "insert",
-      bottom: "r",
+      bottom: "v",
       bottomDescription: "replace character",
       bottomMode: "insert",
     },
     {
-      top: "T",
+      top: "B",
       topDescription: "back 'till",
       topMode: "motion",
-      bottom: "t",
+      bottom: "b",
       bottomDescription: "'til",
       bottomMode: "motion",
     },
     {
-      top: "Y",
+      top: "N",
       topDescription: "yank line",
       topMode: "insert",
-      bottom: "y",
+      bottom: "n",
       bottomDescription: "yank",
       bottomMode: "visual",
     },
     {
-      top: "U",
+      top: "M",
       topDescription: "undo line",
       topMode: "insert",
-      bottom: "u",
+      bottom: "m",
       bottomDescription: "undo",
       bottomMode: "insert",
     },
     {
-      top: "I",
+      top: "<",
       topDescription: "insert at beginning",
       topMode: "insert",
-      bottom: "i",
+      bottom: ",",
       bottomDescription: "insert mode",
       bottomMode: "insert",
     },
     {
-      top: "O",
+      top: ">",
       topDescription: "open above",
       topMode: "insert",
-      bottom: "o",
+      bottom: ".",
       bottomDescription: "open below",
       bottomMode: "insert",
     },
     {
-      top: "P",
+      top: "?",
       topDescription: "paste before",
       topMode: "insert",
-      bottom: "p",
+      bottom: "/",
       bottomDescription: "paste after",
       bottomMode: "insert",
-    },
-    {
-      top: "{",
-      topDescription: "begin paragraph",
-      topMode: "motion",
-      bottom: "[•",
-      bottomDescription: "misc",
-      bottomMode: "motion",
-    },
-    {
-      top: "}",
-      topDescription: "end paragraph",
-      topMode: "motion",
-      bottom: "]•",
-      bottomDescription: "misc",
-      bottomMode: "motion",
-    },
-    {
-      top: "|",
-      topDescription: "begin at line / goto column",
-      topMode: "motion",
-      bottom: "•",
-      bottomDescription: "unused",
-      bottomMode: "none",
     },
   ],
 };
 
-export default row3;
+export default row4;

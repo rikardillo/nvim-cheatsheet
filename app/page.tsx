@@ -9,9 +9,13 @@ const rows = [row1, row2, row3, row4];
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-2">
-      <h2>NeoVim Graphical Cheat Sheet</h2>
-      <Keyboard rows={rows} />
+    <div className="flex flex-col gap-2 grow">
+      <h2 className="p-2 text-4xl font-bold tracking-tight">
+        NeoVim Graphical Cheat Sheet
+      </h2>
+      <section className="flex grow items-center justify-center h-full ">
+        <Keyboard rows={rows} />
+      </section>
     </div>
   );
 }
