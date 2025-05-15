@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --color-nvim-mode-normal: #2553af;
+  --color-nvim-mode-visual: #2095be;
+  --color-nvim-mode-motion: #6533c1;
+  --color-nvim-mode-none: #5a5a5a;
+}
