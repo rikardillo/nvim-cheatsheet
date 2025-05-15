@@ -1,19 +1,21 @@
+import { NeoVimModes } from "./Key.types";
+
 type KeyTextProps = {
-  keymap: string;
+  keybutton: string;
   text: string;
   itemsAlign: "start" | "end";
-  mode: "none" | "normal" | "visual" | "motion";
+  mode: NeoVimModes;
 };
 
 export default function KeyText({
-  keymap,
+  keybutton,
   text,
   itemsAlign,
   mode,
 }: KeyTextProps) {
   const modeColors = {
     none: "bg-nvim-mode-none",
-    normal: "bg-nvim-mode-normal",
+    insert: "bg-nvim-mode-normal",
     visual: "bg-nvim-mode-visual",
     motion: "bg-nvim-mode-motion",
   } as const;
@@ -22,13 +24,13 @@ export default function KeyText({
 
   return (
     <div
-      className={`flex grow p-2 
+      className={`flex grow p-2 gap-4
         ${itemsAlign === "start" ? "items-start" : "items-end"}
         ${modeColor}
         `}
     >
-      <div className="key text-2xl">{keymap}</div>
-      <div className="text-right w-full description text-xs">{text}</div>
+      <p className="key text-2xl">{keybutton}</p>
+      <p className="text-right w-full description text-xs">{text}</p>
     </div>
   );
 }
