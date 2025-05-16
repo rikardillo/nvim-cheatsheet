@@ -16,10 +16,10 @@ const row3: KeyboardRow = {
     },
     {
       top: "S",
-      topDescription: "substitute line",
+      topDescription: "subs. line",
       topMode: "insert",
       bottom: "s",
-      bottomDescription: "substitute character",
+      bottomDescription: "subs. char.",
       bottomMode: "insert",
     },
     {
@@ -72,7 +72,7 @@ const row3: KeyboardRow = {
     },
     {
       top: "L",
-      topDescription: "screen bottom",
+      topDescription: "scr. btm",
       topMode: "motion",
       bottom: "l",
       bottomDescription: "→",
@@ -88,7 +88,7 @@ const row3: KeyboardRow = {
     },
     {
       top: `"`,
-      topDescription: "register spec",
+      topDescription: "reg. spec.",
       topMode: "none",
       bottom: `'`,
       bottomDescription: "goto mark",

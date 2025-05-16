@@ -35,7 +35,7 @@ const row2: KeyboardRow = {
       topDescription: "replace mode",
       topMode: "insert",
       bottom: "r",
-      bottomDescription: "replace character",
+      bottomDescription: "replace char.",
       bottomMode: "insert",
     },
     {
@@ -88,7 +88,7 @@ const row2: KeyboardRow = {
     },
     {
       top: "{",
-      topDescription: "begin paragraph",
+      topDescription: "begin parag.",
       topMode: "motion",
       bottom: "[•",
       bottomDescription: "misc",
@@ -96,7 +96,7 @@ const row2: KeyboardRow = {
     },
     {
       top: "}",
-      topDescription: "end paragraph",
+      topDescription: "end parag.",
       topMode: "motion",
       bottom: "]•",
       bottomDescription: "misc",
@@ -104,7 +104,7 @@ const row2: KeyboardRow = {
     },
     {
       top: "|",
-      topDescription: "begin at line / goto column",
+      topDescription: "bol",
       topMode: "motion",
       bottom: "•",
       bottomDescription: "unused",

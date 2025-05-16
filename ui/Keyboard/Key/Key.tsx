@@ -11,17 +11,15 @@ export default function Key({
   bottomMode,
 }: KeyProps) {
   return (
-    <div
-      className="bg-slate-700 aspect-square rounded-lg flex flex-col overflow-hidden select-none sm:hover:outline-4 sm:hover:outline-white transition-all duration-150 cursor-pointer w-[calc(100%/16)]"
-    >
+    <div className="flex aspect-square w-[calc(100%/16)] cursor-pointer flex-col overflow-hidden rounded-sm bg-slate-700 transition-all duration-150 select-none sm:hover:outline-4 sm:hover:outline-white">
       <KeyText
-        keybutton={top}
+        keyLetter={top}
         text={topDescription}
         itemsAlign="start"
         mode={topMode}
       />
       <KeyText
-        keybutton={bottom}
+        keyLetter={bottom}
         text={bottomDescription}
         itemsAlign="end"
         mode={bottomMode}

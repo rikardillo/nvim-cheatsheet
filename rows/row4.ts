@@ -75,7 +75,7 @@ const row4: KeyboardRow = {
       topDescription: "indent",
       topMode: "visual",
       bottom: ".",
-      bottomDescription: "repeat command",
+      bottomDescription: "repeat cmd",
       bottomMode: "insert",
     },
     {

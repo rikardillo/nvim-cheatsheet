@@ -1,6 +1,6 @@
 type InitialKeyProps = {
   initialKeyWidth: number | undefined;
-  initialKey: string;
+  initialKey?: string;
 };
 
 export default function InitialKey({
@@ -12,12 +12,10 @@ export default function InitialKey({
   console.log(initialKeyWidth, width);
   return (
     <div
-      className={`border-2 border-white rounded-lg grow flex items-center justify-center p-4 uppercase opacity-40 select-none truncate `}
+      className={`flex grow items-center justify-center truncate rounded-lg p-4 uppercase opacity-40 select-none`}
       style={{
         maxWidth: `calc(100%/16*${initialKeyWidth})`,
       }}
-    >
-      {initialKey}
-    </div>
+    ></div>
   );
 }

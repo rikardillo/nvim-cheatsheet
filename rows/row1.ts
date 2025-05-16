@@ -28,7 +28,7 @@ const row1: KeyboardRow = {
     },
     {
       top: "#",
-      topDescription: "search backwards",
+      topDescription: "search backw.",
       topMode: "motion",
       bottom: "3",
       bottomDescription: undefined,
@@ -44,7 +44,7 @@ const row1: KeyboardRow = {
     },
     {
       top: "%",
-      topDescription: "match (bracket)",
+      topDescription: "goto match",
       topMode: "motion",
       bottom: "5",
       bottomDescription: undefined,
@@ -76,7 +76,7 @@ const row1: KeyboardRow = {
     },
     {
       top: "(",
-      topDescription: "begin sequence",
+      topDescription: "begin seq.",
       topMode: "motion",
       bottom: "9",
       bottomDescription: undefined,
@@ -84,15 +84,15 @@ const row1: KeyboardRow = {
     },
     {
       top: ")",
-      topDescription: "end sequence",
+      topDescription: "end seq.",
       topMode: "motion",
       bottom: "0",
-      bottomDescription: `"hard" begin of line`,
+      bottomDescription: `"hard" bol`,
       bottomMode: "motion",
     },
     {
       top: "_",
-      topDescription: `"soft" begin of line down`,
+      topDescription: `"soft" bol`,
       topMode: "motion",
       bottom: "-",
       bottomDescription: "prev. line",

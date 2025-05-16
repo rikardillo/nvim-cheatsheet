@@ -1,14 +1,14 @@
 import { NeoVimModes } from "./Key.types";
 
 type KeyTextProps = {
-  keybutton: string;
+  keyLetter: string;
   text: string | undefined;
   itemsAlign: "start" | "end";
   mode: NeoVimModes;
 };
 
 export default function KeyText({
-  keybutton,
+  keyLetter,
   text,
   itemsAlign,
   mode,
@@ -24,15 +24,12 @@ export default function KeyText({
 
   return (
     <div
-      className={`flex h-1/2 lg:p-2 lg:gap-[6px] md:gap-[4px] md:p-1 gap-[2px]
-        ${itemsAlign === "start" ? "items-start" : "items-end"}
-        ${modeColor}
-        `}
+      className={`vim-cmds-text flex h-1/2 gap-2 overflow-hidden md:p-0.5 lg:p-1 ${itemsAlign === "start" ? "items-start" : "items-end"} ${modeColor} `}
     >
-      <p className="key lg:text-xl md:text-lg sm:text-lg transition-all duration-150">
-        {keybutton}
+      <p className="key md:text-md font-bold transition-all duration-150 sm:text-sm lg:text-lg">
+        {keyLetter}
       </p>
-      <p className="text-right w-full description xl:text-[12px] lg:text-[10px] md:text-[8px] text-[8px] leading-tight transition-all duration-150 grow">
+      <p className="description w-full grow text-right text-[4px] leading-[8px] text-white/50 transition-all duration-150 md:text-[6px] lg:text-[8px] lg:leading-[14px] xl:text-[12px]">
         {text}
       </p>
     </div>
